@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PSICOVOZES - Um documentário investigativo interativo sobre o caso de Neto, a luta antimanicomial e a Justiça Restaurativa. Quando o cuidado vira silêncio.">
+    <title>PSICOVOZES - Quando o cuidado vira silêncio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600;700&family=Special+Elite&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Linha de Progresso Superior -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="pageProgressBar"></div>
+    </div>
+
+    <!-- NAVBAR PORTAL INVESTIGATIVO -->
+    <nav class="investigative-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">PSICOVOZES</a>
+            <div class="nav-status-badge">
+                <span class="pulse-dot"></span> DOSSIÊ NETO: CONFIDENCIAL
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#manchete">A Notícia</a></li>
+                <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
+                <li><a href="#escolha-conflito">O Conflito</a></li>
+                <li><a href="#luta-antimanicomial">Luta Antimanicomial</a></li>
+                <li><a href="#documentos">Documentos</a></li>
+                <li><a href="#entrevistas">Entrevistas</a></li>
+                <li><a href="#justica-restaurativa">Justiça Restaurativa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <header class="hero-section" id="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero_background.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tagline">DEPOIS DE TODAS AS DECISÕES, CERTAS MÁGOAS AINDA NÃO SE CALARAM</p>
+            <h1 class="hero-title">PSICOVOZES</h1>
+            <p class="hero-subtitle">“Quando o cuidado vira silêncio.”</p>
+            <div class="hero-dossier-tag">
+                <span class="stamp">ARQUIVO DE INVESTIGAÇÃO: NETO VS WILSON & MEIRE</span>
+            </div>
+            <a href="#manchete" class="btn btn-primary btn-pulse" id="btnAcessarCaso">ACESSAR CASO</a>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse-icon"><span class="wheel"></span></span>
+            <span class="scroll-text">Role para investigar</span>
+        </div>
+    </header>
+
+    <!-- SECTION 2: MANCHETE PRINCIPAL -->
+    <section class="manchete-section" id="manchete">
+        <div class="section-container">
+            <div class="portal-header">
+                <span class="portal-badge red-alert">🚨 EXCLUSIVO | PLANTÃO</span>
+                <span class="portal-meta">Por Redação Psicovozes • Atualizado em tempo real</span>
+            </div>
+            
+            <h2 class="manchete-titulo">
+                Neto processa os próprios pais após internação compulsória e caso reacende debate sobre violência institucional
+            </h2>
+            <p class="manchete-subtitulo">
+                Processo judicial se arrasta há cinco anos sem acordo entre as partes. Justiça Restaurativa surge como possibilidade para reconstruir o diálogo rompido por muros psiquiátricos.
+            </p>
+
+            <div class="grid-layout">
+                <!-- Artigo Jornalístico -->
+                <div class="article-body">
+                    <p class="lead">
+                        O que começou como um conflito familiar silencioso dentro de casa acabou se transformando em um processo judicial de R$ 500 mil, marcado por dores profundas e discussões éticas sobre os limites entre cuidado paternal e violência institucional.
+                    </p>
+                    <p>
+                        Cinco anos após sair de uma internação psiquiátrica compulsória, Neto decidiu tomar uma atitude extrema: processar os próprios pais, alegando ter sido submetido a isolamento forçado, abandono afetivo e violações físicas dentro do sistema manicomial onde foi internado contra sua vontade.
+                    </p>
+                    
+                    <div class="quote-card-inline">
+                        <p>“Falavam sobre mim sem me perguntar o que eu sentia. Eu virei um diagnóstico a ser trancado.”</p>
+                        <cite>— Neto, em declaração extraída dos autos do processo.</cite>
+                    </div>
+
+                    <p>
+                        A defesa de Neto afirma que a internação foi abusiva, baseada em um conflito doméstico amplificado e preconceito familiar após o pai encontrar um cigarro de maconha em suas coisas. Do outro lado, os pais sustentam que agiram em desespero, acreditando que a internação era a única forma de salvá-lo.
+                    </p>
+                </div>
+
+                <!-- Painel Lateral de Dados e Opinião -->
+                <div class="portal-sidebar">
+                    <div class="dossier-card">
+                        <h3>DADOS DO CASO</h3>
+                        <ul>
+                            <li><strong>Autor:</strong> Neto (Filho, 24 anos)</li>
+                            <li><strong>Réus:</strong> Wilson & Meire (Pais)</li>
+                            <li><strong>Valor da Causa:</strong> R$ 500.000,00</li>
+                            <li><strong>Duração do Processo:</strong> 5 anos sem conciliação</li>
+                            <li><strong>Status atual:</strong> Encaminhado para Mediação e Justiça Restaurativa</li>
+                        </ul>
+                    </div>
+
+                    <div class="tmz-opiniao-card">
+                        <h3>O Limite do Cuidado</h3>
+                        <p>Até que ponto os pais têm o direito de decidir a internação de um filho? O processo tradicional de culpa e indenização é capaz de reconstruir essa família?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Widget Interativo: Comentários da Internet -->
+            <div class="comments-widget">
+                <h3 class="comments-title">Repercussão Pública (Comentários Simulados)</h3>
+                
+                <div class="reaction-counters">
+                    <button class="reaction-btn" data-reaction="apoio-neto">
+                        👍 Apoio ao Neto (<span id="count-neto">142</span>)
+                    </button>
+                    <button class="reaction-btn" data-reaction="apoio-pais">
+                        🙏 Compreensão aos Pais (<span id="count-pais">89</span>)
+                    </button>
+                    <button class="reaction-btn" data-reaction="violencia">
+                        🚨 Denúncia Manicomial (<span id="count-violencia">204</span>)
+                    </button>
+                </div>
+
+                <div class="comments-list" id="commentsList">
+                    <!-- Comentário 1 -->
+                    <div class="comment-item">
+                        <div class="comment-avatar">PL</div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-user">@psico_lucas</span>
+                                <span class="comment-badge tag-violencia">Violência Institucional</span>
+                            </div>
+                            <p class="comment-text">Uma indenização de 500 mil não apaga o trauma do manicômio. Essa violência médica e institucional destrói a identidade da pessoa. Neto está certo em exigir justiça.</p>
+                        </div>
+                    </div>
+                    <!-- Comentário 2 -->
+                    <div class="comment-item">
+                        <div class="comment-avatar">FU</div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-user">@familia_unida</span>
+                                <span class="comment-badge tag-pais">Apoio aos Pais</span>
+                            </div>
+                            <p class="comment-text">Os pais agiram no desespero de salvar o filho das drogas. Rígido ou não, o pai queria proteger. Processar os próprios pais é de uma frieza absurda.</p>
+                        </div>
+                    </div>
+                    <!-- Comentário 3 -->
+                    <div class="comment-item">
+                        <div class="comment-avatar">DR</div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-user">@direito_restaurativo</span>
+                                <span class="comment-badge tag-restaurativa">Justiça Restaurativa</span>
+                            </div>
+                            <p class="comment-text">Cinco anos de disputa judicial e a dor continua. Isso prova que o tribunal tradicional só divide mais as pessoas. Esse caso clama por círculos restaurativos e escuta real.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Comentário -->
+                <form class="comment-form" id="commentForm">
+                    <h4>Deixe sua perspectiva sobre o caso</h4>
+                    <div class="form-row">
+                        <input type="text" id="commentUserName" placeholder="Seu Nome/User (ex: @investigador_anônimo)" required autocomplete="off">
+                        <select id="commentTag" required>
+                            <option value="" disabled selected>Selecione sua Tag de Opinião</option>
+                            <option value="tag-violencia">Violência Institucional</option>
+                            <option value="tag-pais">Apoio aos Pais</option>
+                            <option value="tag-restaurativa">Justiça Restaurativa</option>
+                            <option value="tag-neutro">Outro / Neutro</option>
+                        </select>
+                    </div>
+                    <textarea id="commentText" placeholder="Escreva seu comentário..." rows="3" required></textarea>
+                    <button type="submit" class="btn btn-secondary">PUBLICAR COMENTÁRIO</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: LINHA DO TEMPO -->
+    <section class="timeline-section" id="linha-do-tempo">
+        <div class="section-container">
+            <h2 class="section-title">A Espiral do Conflito</h2>
+            <p class="section-subtitle">Os fatos que transformaram a casa de Neto em um tribunal de silêncio.</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Etapa 1 -->
+                <div class="timeline-item" id="tl-etapa-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fase 1</span>
+                        <h3>Conflito Familiar</h3>
+                        <p>Seu Wilson adota uma postura de autoridade severa e controle rígido. Neto, sentindo-se incompreendido e sufocado em sua autonomia, se distancia. O diálogo em casa deixa de existir, dando lugar a atritos constantes e olhares atravessados.</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 2 -->
+                <div class="timeline-item" id="tl-etapa-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fase 2</span>
+                        <h3>A Ruptura Paternal</h3>
+                        <p>O pai encontra um cigarro de maconha nos pertences de Neto. Para Wilson, o fato valida todos os seus piores temores e é tratado como um colapso de caráter moral e psicológico. Ele decide pela internação compulsória imediata do filho.</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 3 -->
+                <div class="timeline-item" id="tl-etapa-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fase 3</span>
+                        <h3>O Sistema Manicomial</h3>
+                        <p>Neto é arrastado para dentro da instituição psiquiátrica. Lá ele depara-se com um ambiente de isolamento severo, medicalização pesada e perda da individualidade. A instituição passa a produzir mais sofrimento do que acolhimento.</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 4 -->
+                <div class="timeline-item" id="tl-etapa-4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fase 4</span>
+                        <h3>O Retorno e a Revolta</h3>
+                        <p>Ao receber alta, Neto retorna marcado, fragilizado e profundamente ressentido pela quebra de confiança. O sentimento de desamparo evolui para raiva acumulada, culminando na decisão de acionar judicialmente seus pais.</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 5 -->
+                <div class="timeline-item" id="tl-etapa-5">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fase 5</span>
+                        <h3>5 Anos sem Solução</h3>
+                        <p>O processo judicial por danos morais se arrasta. Os pais recusam-se a assumir culpa, sustentando que agiram em proteção. Neto recusa propostas puramente financeiras; ele quer responsabilização e dignidade.</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 6 -->
+                <div class="timeline-item" id="tl-etapa-6">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fase 6</span>
+                        <h3>Justiça Restaurativa</h3>
+                        <p>Após sucessivos fracassos no tribunal convencional, as partes aceitam encaminhar o caso para práticas restaurativas. O foco deixa de ser culpabilizar formalmente e passa a ser ouvir, compreender e reparar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: TRANSIÇÃO EMOCIONAL -->
+    <section class="emotional-transition">
+        <div class="transition-bg-overlay"></div>
+        <div class="transition-container">
+            <div class="fade-quote">
+                <p class="quote-text" id="quoteText">“O processo avançou. O diálogo, não.”</p>
+                <p class="quote-sub" id="quoteSub">Talvez o conflito nunca tenha sido apenas jurídico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: ESCOLHA INTERATIVA -->
+    <section class="interactive-choice-section" id="escolha-conflito">
+        <div class="section-container">
+            <div class="dossier-stamp">INTERAÇÃO 01 — O INÍCIO DO CONFLITO</div>
+            <h2 class="choice-title">Decisão Familiar</h2>
+            <p class="choice-intro">
+                <strong>O Cenário:</strong> Seu Wilson encontrou um cigarro de maconha nas coisas de Neto. A convivência em casa está insustentável. O medo e a raiva tomam conta dos pais.
+            </p>
+            
+            <div class="choice-box">
+                <div class="choice-question">“Como a família deve reagir diante desse limite?”</div>
+                
+                <div class="choice-buttons-grid">
+                    <button class="choice-btn" data-interaction="1" data-option="A">
+                        <span class="opt-letter">A</span>
+                        <span class="opt-text">Internar Neto compulsoriamente.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="1" data-option="B">
+                        <span class="opt-letter">B</span>
+                        <span class="opt-text">Buscar acompanhamento psicológico e diálogo.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="1" data-option="C">
+                        <span class="opt-letter">C</span>
+                        <span class="opt-text">Ignorar o problema e esperar que passe.</span>
+                    </button>
+                </div>
+
+                <!-- Painel de Feedback da Escolha -->
+                <div class="choice-feedback hidden" id="feedback-i1">
+                    <div class="feedback-content-wrapper">
+                        <h4>Impacto da sua escolha:</h4>
+                        <p class="feedback-narrative" id="narrative-i1"></p>
+                        <div class="feedback-divider"></div>
+                        <p class="feedback-quote" id="quote-i1"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: LUTA ANTIMANICOMIAL -->
+    <section class="antimanicomial-section" id="luta-antimanicomial">
+        <div class="section-container">
+            <div class="grid-two-columns">
+                <div class="asylum-history">
+                    <span class="sub-stamp">MEMÓRIA HISTÓRICA</span>
+                    <h2>Hospital Colônia de Barbacena</h2>
+                    <h3>O Holocausto Psiquiátrico Brasileiro</h3>
+                    
+                    <div class="asylum-banner-wrapper">
+                        <img src="assets/hospital_barbacena.png" alt="Hospital Colônia de Barbacena" class="asylum-banner-img">
+                        <div class="asylum-banner-overlay"></div>
+                    </div>
+                    <p>
+                        A internação forçada de Neto não é um caso isolado, mas herdeira de uma lógica sombria que marcou a história do nosso país. Em Barbacena (MG), o Hospital Colônia funcionou por décadas como depósito humano.
+                    </p>
+                    <p>
+                        Dos mais de 60 mil mortos naquele local, estima-se que cerca de <strong>70% não tinham diagnóstico de doença mental</strong>. Eram tristes, pobres, homossexuais, mães solteiras, opositores políticos e jovens rebeldes, silenciados sob a desculpa de "cuidado médico".
+                    </p>
+                    <div class="bullets-violations">
+                        <h4>Violências Institucionalizadas catalogadas:</h4>
+                        <ul>
+                            <li>Isolamento extremo e perda completa da identidade</li>
+                            <li>Tratamento violento por eletrochoque punitivo</li>
+                            <li>Dopagem em massa e dependência química induzida</li>
+                            <li>Frio extremo e desnutrição crônica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quiz Interativo sobre Práticas Manicomiais -->
+                <div class="quiz-container">
+                    <div class="quiz-card">
+                        <h3>TESTE INTERATIVO: Práticas Manicomiais</h3>
+                        <p class="quiz-intro">Você consegue identificar o que caracteriza a violência manicomial?</p>
+                        
+                        <div class="quiz-slide" id="quiz-q1">
+                            <div class="quiz-progress">Pergunta 1 de 2</div>
+                            <h4 class="quiz-question">O isolamento total de um indivíduo em sofrimento psíquico é um método eficaz de tratamento?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-opt-btn" data-correct="false">Sim, afasta o estresse social e facilita o controle médico.</button>
+                                <button class="quiz-opt-btn" data-correct="true">Não, o isolamento rompe os laços de afeto e agrava o trauma.</button>
+                            </div>
+                            <div class="quiz-feedback hidden"></div>
+                        </div>
+
+                        <div class="quiz-slide hidden" id="quiz-q2">
+                            <div class="quiz-progress">Pergunta 2 de 2</div>
+                            <h4 class="quiz-question">Qual é a base da Luta Antimanicomial no tratamento de saúde mental hoje?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-opt-btn" data-correct="true">Cuidado em liberdade, humanização e reinserção social comunitária.</button>
+                                <button class="quiz-opt-btn" data-correct="false">Contenção sistemática em alas fechadas e regulação farmacológica rígida.</button>
+                            </div>
+                            <div class="quiz-feedback hidden"></div>
+                        </div>
+                        
+                        <div class="quiz-result hidden" id="quiz-result-panel">
+                            <h4>Avaliação Finalizada</h4>
+                            <p id="quiz-score-text"></p>
+                            <button class="btn btn-secondary btn-small" id="btnRestartQuiz">Refazer Teste</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interação 2 (O Manicômio) -->
+            <div class="interactive-choice-box" style="margin-top: 4rem;">
+                <div class="dossier-stamp">INTERAÇÃO 02 — O MANICÔMIO</div>
+                <h3 class="choice-title" style="color: var(--white); font-size: 1.8rem; text-align: center; margin-bottom: 1.5rem;">Qual deveria ser a prioridade da instituição no momento da internação?</h3>
+                <div class="choice-buttons-grid-two">
+                    <button class="choice-btn" data-interaction="2" data-option="A">
+                        <span class="opt-letter">A</span>
+                        <span class="opt-text">Garantir controle comportamental e medicação forte.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="2" data-option="B">
+                        <span class="opt-letter">B</span>
+                        <span class="opt-text">Oferecer acolhimento individualizado e escuta ativa.</span>
+                    </button>
+                </div>
+                <div class="choice-feedback hidden" id="feedback-i2">
+                    <div class="feedback-content-wrapper">
+                        <h4>Impacto da sua escolha:</h4>
+                        <p class="feedback-narrative" id="narrative-i2"></p>
+                        <div class="feedback-divider"></div>
+                        <p class="feedback-quote" id="quote-i2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: REFORMA PSIQUIÁTRICA -->
+    <section class="reforma-section" id="reforma">
+        <div class="section-container">
+            <h2 class="section-title text-center">A Reforma Psiquiátrica Brasileira</h2>
+            <p class="section-subtitle text-center">A mudança legislativa e a transição para um cuidado com dignidade.</p>
+            
+            <div class="reforma-grid">
+                <!-- Lei 10.216 -->
+                <div class="reforma-card">
+                    <div class="card-icon">📜</div>
+                    <h3>Lei Federal 10.216/2001</h3>
+                    <p>Conhecida como a Lei da Reforma Psiquiátrica, ela redirecionou o modelo assistencial em saúde mental. A legislação proíbe a internação em instituições com características asilares e assegura direitos essenciais ao paciente, como a proteção contra qualquer tipo de abuso e o direito a ser tratado em ambiente comunitário e de liberdade.</p>
+                </div>
+
+                <!-- CAPS -->
+                <div class="reforma-card">
+                    <div class="card-icon">🏡</div>
+                    <h3>Os CAPS e Serviços Substitutivos</h3>
+                    <p>Os Centros de Atenção Psicossocial (CAPS) surgem para substituir os manicômios. São serviços de saúde abertos e territoriais que buscam oferecer atendimento clínico personalizado, oficinas terapêuticas, e reinserção social, promovendo a autonomia dos sujeitos ao invés de sua exclusão física e familiar.</p>
+                </div>
+
+                <!-- Humanização -->
+                <div class="reforma-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>Dignidade e Autonomia</h3>
+                    <p>O foco principal do cuidado em liberdade é enxergar o sofrimento psíquico não como uma ameaça perigosa que precisa ser trancada, mas como uma vivência humana que exige escuta qualificada, acompanhamento multidisciplinar e preservação integral da cidadania do sujeito.</p>
+                </div>
+            </div>
+
+            <div class="reforma-comparison">
+                <div class="comparison-side old-way">
+                    <h4>Antigo Modelo Manicomial</h4>
+                    <ul>
+                        <li>Exclusão do convívio familiar</li>
+                        <li>Tratamento centralizado no asilo psiquiátrico</li>
+                        <li>Anulação do sujeito e foco na doença</li>
+                        <li>Violência institucionalizada e depagem</li>
+                    </ul>
+                </div>
+                <div class="comparison-arrow">➔</div>
+                <div class="comparison-side new-way">
+                    <h4>Modelo de Atenção Psicossocial</h4>
+                    <ul>
+                        <li>Manutenção dos vínculos familiares e comunitários</li>
+                        <li>Tratamento na rede pública aberta (CAPS)</li>
+                        <li>Foco na pessoa, história de vida e autonomia</li>
+                        <li>Cuidado humanizado e reinserção social</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: DOCUMENTOS VAZADOS -->
+    <section class="docs-section" id="documentos">
+        <div class="section-container">
+            <h2 class="section-title">Dossiê de Provas: Documentos Confidenciais</h2>
+            <p class="section-subtitle">Examine os papéis oficiais e relatos pessoais que embasam o caso judicial.</p>
+            
+            <div class="folder-container">
+                <div class="folder-visual">
+                    <img src="assets/confidential_folder.jpg" alt="Pasta Confidencial" class="folder-img">
+                    <div class="folder-instructions">
+                        <p>Clique em uma aba para puxar os documentos anexados do caso:</p>
+                    </div>
+                </div>
+
+                <div class="document-tabs">
+                    <button class="doc-tab-btn active" data-doc="doc1">Laudo de Internação (Fictício)</button>
+                    <button class="doc-tab-btn" data-doc="doc2">Notas Diárias do Neto</button>
+                    <button class="doc-tab-btn" data-doc="doc3">Petição Inicial (Processo)</button>
+                    <button class="doc-tab-btn" data-doc="doc4">Carta Não Enviada (Mãe)</button>
+                </div>
+
+                <div class="document-viewer" id="documentViewer">
+                    <!-- Conteúdo do Documento 1 (Padrão) -->
+                    <div class="doc-content active" id="doc1">
+                        <div class="typewriter-paper">
+                            <div class="confidential-stamp">CONFIDENCIAL</div>
+                            <div class="paper-header">
+                                <p><strong>CLÍNICA PSICOPÁTRIA SANTA MEIRE</strong></p>
+                                <p>Ficha de Admissão compulsória - Registro #8874-N</p>
+                                <p>Data: 14 de março de 2021</p>
+                            </div>
+                            <hr>
+                            <div class="paper-body">
+                                <p><strong>Paciente:</strong> Ernesto M. (Neto), 19 anos.</p>
+                                <p><strong>Responsável pela Internação:</strong> Wilson M. (Genitor).</p>
+                                <p><strong>Diagnóstico Preliminar:</strong> Transtorno de conduta social disruptiva, suspeita de dependência química severa baseada em apreensão de psicotrópicos no domicílio (cannabis sativa).</p>
+                                <p><strong>Observações Clínicas:</strong> Paciente apresentou agitação motora extrema, recusa em cooperar com as diretrizes paternas de retidão moral e agressividade verbal durante o trajeto. Genitor relata comportamento refratário a orientações e isolamento progressivo. Indicado tratamento clínico fechado para contenção e regulação psiquiátrica.</p>
+                                <p><strong>Método prescrito:</strong> Isolamento inicial (72h), restrição de visitas e administração imediata de neurolépticos reguladores.</p>
+                                <p class="signature">Assinado: Dr. Alair dos Santos - CRM/SP 43.109</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo do Documento 2 -->
+                    <div class="doc-content" id="doc2">
+                        <div class="typewriter-paper handwritten">
+                            <div class="confidential-stamp text-gray">NOTAS PESSOAIS</div>
+                            <div class="paper-header">
+                                <p><em>Sem data definida. Pedaços de papel rasgados guardados sob o colchão.</em></p>
+                            </div>
+                            <hr>
+                            <div class="paper-body">
+                                <p>"Aqui dentro os dias não têm nome. A enfermeira entra de manhã, joga dois comprimidos azuis na minha mão e espera eu engolir. Se eu demoro, dois enfermeiros aparecem na porta. Eu não tenho o direito de ficar triste aqui. Se eu choro, eles dizem que é sintoma e aumentam as gotas."</p>
+                                <p>"Meu pai acha que está fazendo isso pro meu bem. Mas como afastar alguém de tudo o que ama é fazer o bem? A pior coisa não é o barulho do cadeado fechando a porta de noite. A pior coisa é saber que eles assinaram o papel me deixando aqui. Eles me trancaram no silêncio."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo do Documento 3 -->
+                    <div class="doc-content" id="doc3">
+                        <div class="typewriter-paper">
+                            <div class="confidential-stamp text-red">AÇÃO JUDICIAL</div>
+                            <div class="paper-header">
+                                <p><strong>TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO</strong></p>
+                                <p>Vara de Família e Sucessões • Processo nº 1004392-55.2021.8.26.0100</p>
+                            </div>
+                            <hr>
+                            <div class="paper-body">
+                                <p><strong>Requerente:</strong> Ernesto M. (Neto)</p>
+                                <p><strong>Requeridos:</strong> Wilson M. e Meire M.</p>
+                                <p><strong>Objeto:</strong> Ação de reparação civil por danos morais, psicológicos e violação de integridade pessoal decorrentes de internação compulsória indevida em estabelecimento de características manicomiais.</p>
+                                <p><strong>Fundamentação:</strong> O requerente alega ter sido submetido à internação compulsória por atos exclusivos e desmedidos dos requeridos, baseados em divergências puramente familiares, sem laudo psiquiátrico prévio detalhado ou respeito aos direitos previstos na Lei Federal 10.216/01. O confinamento forçado violou gravemente sua dignidade, liberdade e provocou estresse pós-traumático crônico.</p>
+                                <p><strong>Pedido:</strong> Condenação dos requeridos ao pagamento de indenização no montante de R$ 500.000,00 (quinhentos mil reais) para reparação dos danos psicológicos e à autonomia do autor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo do Documento 4 -->
+                    <div class="doc-content" id="doc4">
+                        <div class="typewriter-paper handwritten">
+                            <div class="confidential-stamp text-gray">NÃO ENVIADA</div>
+                            <div class="paper-header">
+                                <p><em>Carta rascunhada por Meire (Mãe) arquivada em sua gaveta pessoal.</em></p>
+                            </div>
+                            <hr>
+                            <div class="paper-body">
+                                <p>"Neto, meu filho..."</p>
+                                <p>"Escrevo essa carta porque as palavras entalam na garganta toda vez que você me olha com aquele ódio no tribunal. Eu sei que você acha que nós te traímos. Mas eu queria que você entendesse o pânico que eu sentia todas as noites. Eu via você se afastando de nós, trancado no quarto, não respondendo às minhas perguntas."</p>
+                                <p>"Quando seu pai achou aquela droga, meu mundo desabou. Eu tinha pavor de te ver perder a vida para a marginalidade ou para a loucura. Nós não sabíamos o que fazer. Fomos orientados de que a clínica seria o melhor. Ninguém me disse como era lá dentro. Ninguém me disse que eles te tratariam daquele jeito. A culpa me corrói todos os dias, mas saiba que o que nos moveu foi o medo de te enterrar."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interação 3 (O Processo Judicial) -->
+            <div class="interactive-choice-box" style="margin-top: 4rem;">
+                <div class="dossier-stamp">INTERAÇÃO 03 — O PROCESSO JUDICIAL</div>
+                <h3 class="choice-title" style="color: var(--white); font-size: 1.8rem; text-align: center; margin-bottom: 1.5rem;">Diante da ação de R$ 500 mil promovida pelo próprio filho, o que a Justiça deveria priorizar?</h3>
+                <div class="choice-buttons-grid-two">
+                    <button class="choice-btn" data-interaction="3" data-option="A">
+                        <span class="opt-letter">A</span>
+                        <span class="opt-text">Definir o culpado legal e estipular a indenização financeira.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="3" data-option="B">
+                        <span class="opt-letter">B</span>
+                        <span class="opt-text">Compreender as dores de todos e buscar a reparação emocional.</span>
+                    </button>
+                </div>
+                <div class="choice-feedback hidden" id="feedback-i3">
+                    <div class="feedback-content-wrapper">
+                        <h4>Impacto da sua escolha:</h4>
+                        <p class="feedback-narrative" id="narrative-i3"></p>
+                        <div class="feedback-divider"></div>
+                        <p class="feedback-quote" id="quote-i3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: ENTREVISTAS -->
+    <section class="interview-section" id="entrevistas">
+        <div class="section-container">
+            <h2 class="section-title text-center">Depoimentos: Vozes Confrontadas</h2>
+            <p class="section-subtitle text-center">Separados pela história, reunidos pela dor. Clique nos personagens para investigar seus relatos de forma profunda.</p>
+            
+            <div class="interviews-grid">
+                <!-- Personagem: Neto -->
+                <div class="interview-card" id="card-neto">
+                    <div class="avatar-holder">
+                        <img src="assets/neto_interview.png" alt="Neto em silêncio" class="interview-img">
+                        <div class="overlay-card"></div>
+                        <span class="card-name">NETO (Filho)</span>
+                    </div>
+                    <div class="card-interview-content">
+                        <p class="impact-quote">“O pior não era o manicômio. Era saber que meus pais concordavam com aquilo.”</p>
+                        
+                        <div class="interactive-questions">
+                            <p class="question-label">O que perguntar para Neto?</p>
+                            <button class="q-btn" data-speaker="neto" data-question="q1">Como foi a percepção da internação?</button>
+                            <button class="q-btn" data-speaker="neto" data-question="q2">Qual é o sentido real do processo contra seus pais?</button>
+                        </div>
+                        
+                        <div class="answer-display hidden" id="ans-neto">
+                            <p class="typing-text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personagem: Pais (Wilson e Meire) -->
+                <div class="interview-card" id="card-parents">
+                    <div class="avatar-holder">
+                        <img src="assets/family_conflict.png" alt="Wilson e Meire" class="interview-img">
+                        <div class="overlay-card"></div>
+                        <span class="card-name">WILSON & MEIRE (Pais)</span>
+                    </div>
+                    <div class="card-interview-content">
+                        <p class="impact-quote">“Ser tratado como inimigo por quem você tentou proteger de si mesmo é devastador.”</p>
+                        
+                        <div class="interactive-questions">
+                            <p class="question-label">O que perguntar aos pais?</p>
+                            <button class="q-btn" data-speaker="parents" data-question="q1">Seu Wilson, você se arrepende da internação compulsória?</button>
+                            <button class="q-btn" data-speaker="parents" data-question="q2">Meire, como a culpa e o medo guiaram suas escolhas?</button>
+                        </div>
+                        
+                        <div class="answer-display hidden" id="ans-parents">
+                            <p class="typing-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: JUSTIÇA RESTAURATIVA -->
+    <section class="restaurativa-section" id="justica-restaurativa">
+        <div class="section-container">
+            <h2 class="section-title">A Justiça Restaurativa em Prática</h2>
+            <p class="section-subtitle">Diferente do tribunal que julga sob leis frias, o círculo restaurativo acolhe os danos de todos os envolvidos para buscar responsabilização ativa e cura familiar.</p>
+
+            <div class="jr-explanation-box">
+                <div class="jr-badge">CNJ RESOLUÇÃO 225/2016</div>
+                <h3>Os Princípios do Diálogo Restaurativo</h3>
+                <p>
+                    A Justiça Restaurativa no Brasil é regulamentada pelo Conselho Nacional de Justiça. Ela atua de forma complementar aos processos criminais e civis ordinários, focando na corresponsabilidade, escuta qualificada das dores e reparação real, buscando quebrar o ciclo infinito de silêncio e punição.
+                </p>
+                
+                <div class="jr-visual-wrapper">
+                    <svg class="restorative-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Glowing circle layers -->
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="var(--primary)" stroke-width="2" opacity="0.3" stroke-dasharray="4 4" class="pulse-circle" />
+                        <circle cx="100" cy="100" r="70" fill="none" stroke="var(--white)" stroke-width="1" opacity="0.1" />
+                        <!-- Connection path representing dialog -->
+                        <path d="M 50,100 C 70,70 90,70 100,100 C 110,130 130,130 150,100" fill="none" stroke="var(--primary-light)" stroke-width="3" stroke-linecap="round" class="connection-line" />
+                        <path d="M 60,90 C 80,120 90,120 100,90 C 110,60 120,60 140,90" fill="none" stroke="var(--white)" stroke-width="1.5" opacity="0.4" stroke-dasharray="2 2" />
+                        <!-- Dialogue nodes -->
+                        <circle cx="100" cy="100" r="10" fill="var(--primary)" opacity="0.7" />
+                        <circle cx="50" cy="100" r="7" fill="var(--primary-light)" />
+                        <circle cx="150" cy="100" r="7" fill="var(--white)" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Simulador de Círculo Restaurativo -->
+            <div class="circle-simulation-container">
+                <h3>Simulador de Encontro Restaurativo</h3>
+                <p class="circle-instruction">Clique nos integrantes do círculo para ouvir seus depoimentos sinceros durante a facilitação de Justiça Restaurativa:</p>
+                
+                <div class="circle-layout-wrapper">
+                    <!-- O Círculo -->
+                    <div class="dialogue-circle">
+                        <div class="circle-node facilitator" data-member="facilitator">Facilitadora</div>
+                        <div class="circle-node member-neto" data-member="neto">Neto</div>
+                        <div class="circle-node member-wilson" data-member="wilson">Wilson (Pai)</div>
+                        <div class="circle-node member-meire" data-member="meire">Meire (Mãe)</div>
+                        <div class="circle-center-logo">JR</div>
+                    </div>
+                    
+                    <!-- Display de Fala -->
+                    <div class="circle-speech-bubble" id="circleSpeechBubble">
+                        <p class="speech-intro">Selecione um participante no círculo ao lado para iniciar a conversa.</p>
+                        <h4 class="speech-speaker-name"></h4>
+                        <p class="speech-text"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interação 4 (Justiça Restaurativa) -->
+            <div class="interactive-choice-box" style="margin-top: 4rem;">
+                <div class="dossier-stamp">INTERAÇÃO 04 — JUSTIÇA RESTAURATIVA</div>
+                <h3 class="choice-title" style="color: var(--white); font-size: 1.8rem; text-align: center; margin-bottom: 1.5rem;">As partes aceitaram participar da Prática Restaurativa. O que deve ser priorizado no início?</h3>
+                <div class="choice-buttons-grid">
+                    <button class="choice-btn" data-interaction="4" data-option="A">
+                        <span class="opt-letter">A</span>
+                        <span class="opt-text">Focar no reconhecimento profundo dos danos sofridos por Neto.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="4" data-option="B">
+                        <span class="opt-text">Forçar um pedido rápido de desculpas e fechar acordo imediato.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="4" data-option="C">
+                        <span class="opt-letter">C</span>
+                        <span class="opt-text">Realizar a escuta coletiva de como o medo e o silêncio afetaram a todos.</span>
+                    </button>
+                </div>
+                <div class="choice-feedback hidden" id="feedback-i4">
+                    <div class="feedback-content-wrapper">
+                        <h4>Impacto da sua escolha:</h4>
+                        <p class="feedback-narrative" id="narrative-i4"></p>
+                        <div class="feedback-divider"></div>
+                        <p class="feedback-quote" id="quote-i4"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interação 5 (Luta Antimanicomial) -->
+            <div class="interactive-choice-box" style="margin-top: 4rem;">
+                <div class="dossier-stamp">INTERAÇÃO 05 — LUTA ANTIMANICOMIAL</div>
+                <h3 class="choice-title" style="color: var(--white); font-size: 1.8rem; text-align: center; margin-bottom: 1.5rem;">Após conhecer a história de Barbacena e o caso de Neto, o que você acha que mais produz exclusão?</h3>
+                <div class="choice-buttons-grid">
+                    <button class="choice-btn" data-interaction="5" data-option="A">
+                        <span class="opt-letter">A</span>
+                        <span class="opt-text">O Diagnóstico Médico Clínico.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="5" data-option="B">
+                        <span class="opt-letter">B</span>
+                        <span class="opt-text">A Falta de Escuta do Sofrimento.</span>
+                    </button>
+                    <button class="choice-btn" data-interaction="5" data-option="C">
+                        <span class="opt-letter">C</span>
+                        <span class="opt-text">O Isolamento Psíquico e Social.</span>
+                    </button>
+                </div>
+                <div class="choice-feedback hidden" id="feedback-i5">
+                    <div class="feedback-content-wrapper">
+                        <h4>Impacto da sua escolha:</h4>
+                        <p class="feedback-narrative" id="narrative-i5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: FINAL INTERATIVO -->
+    <section class="final-interactive-section" id="final-escolha">
+        <div class="section-container">
+            <h2 class="section-title text-center">A Decisão Final</h2>
+            <p class="section-subtitle text-center">Depois de investigar todas as vozes e documentos... o que significa justiça para você neste caso?</p>
+            
+            <div class="final-word-selector">
+                <p class="selector-info">Selecione uma ou mais palavras que melhor representam a justiça na sua visão:</p>
+                <div class="final-tags-container">
+                    <button class="final-tag-btn" data-word="Punição">⚖️ Punição</button>
+                    <button class="final-tag-btn" data-word="Escuta">🗣️ Escuta</button>
+                    <button class="final-tag-btn" data-word="Reparação">🤝 Reparação</button>
+                    <button class="final-tag-btn" data-word="Humanização">🧠 Humanização</button>
+                    <button class="final-tag-btn" data-word="Reconstrução">❤️ Reconstrução</button>
+                </div>
+                
+                <button class="btn btn-primary disabled" id="btnRevealJustice" disabled>REVELAR CONCEITO</button>
+            </div>
+
+            <!-- Painel de Revelação Emocional -->
+            <div class="justice-reveal-panel hidden" id="justiceRevealPanel">
+                <div class="reveal-inner">
+                    <h3 class="reveal-main-title">JUSTIÇA RESTAURATIVA</h3>
+                    <p class="reveal-sub-quote">“Algumas feridas precisam, antes de tudo, ser ouvidas.”</p>
+                    <div class="family-resolution-text">
+                        <p>O processo judicial tradicional busca julgar fatos passados sob regras de exclusão e penalidade financeira, muitas vezes aprofundando o abismo familiar. A Justiça Restaurativa abre um espaço para que a verdade de cada um seja revelada. Neto pôde verbalizar o trauma de ter sua dignidade sequestrada; Meire e Wilson puderam se responsabilizar pelos danos gerados pelo medo. A cura não surge da cobrança de um processo legal, mas da reparação ativa das feridas afetivas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: CRÉDITOS E REFERÊNCIAS -->
+    <footer class="credits-section" id="creditos">
+        <div class="section-container">
+            <div class="footer-grid">
+                <!-- Informações Acadêmicas -->
+                <div class="academic-info">
+                    <h3>PSICOVOZES</h3>
+                    <p class="tagline">“Quando o cuidado vira silêncio.”</p>
+                    <p class="academic-details">
+                        Projeto Digital Interativo Interdisciplinar desenvolvido como trabalho acadêmico de graduação.<br>
+                        <strong>Temática:</strong> Justiça Restaurativa, Reforma Psiquiátrica e Luta Antimanicomial.<br>
+                        <strong>Inspirado em:</strong> <em>Bicho de Sete Cabeças</em> (Filme de Laís Bodanzky, baseado no livro <em>Canto dos Malditos</em> de Austregésilo Carrano Bueno).
+                    </p>
+                    <div class="team-members">
+                        <h4>Ficha Técnica / Divisão de Funções:</h4>
+                        <ul>
+                            <li><strong>Direção Visual:</strong> Design, Estética e Layout</li>
+                            <li><strong>Luta Antimanicomial:</strong> Pesquisa histórica e textos de apoio</li>
+                            <li><strong>Reforma Psiquiátrica:</strong> Análise da Lei 10.216 e Rede CAPS</li>
+                            <li><strong>Justiça Restaurativa:</strong> Fundamentação teórica e Círculos de Diálogo</li>
+                            <li><strong>Entrevistas e Narrativa:</strong> Storytelling e roteiro dos personagens</li>
+                            <li><strong>Jornalismo:</strong> Redação das notícias, portal e comentários</li>
+                            <li><strong>Pesquisa Acadêmica:</strong> Normas ABNT, legislação e referências</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Referências Acadêmicas -->
+                <div class="academic-references">
+                    <h3>Referências Acadêmicas (ABNT)</h3>
+                    <ul>
+                        <li>BRASIL. <strong>Lei nº 10.216, de 6 de abril de 2001</strong>. Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o modelo assistencial em saúde mental. Brasília, 2001.</li>
+                        <li>BRASIL. <strong>Lei nº 13.140, de 26 de junho de 2015</strong>. Dispõe sobre a mediação entre particulares como meio de solução de controvérsias. Brasília, 2015.</li>
+                        <li>CONSELHO NACIONAL DE JUSTIÇA (CNJ). <strong>Resolução nº 225, de 31 de maio de 2016</strong>. Dispõe sobre a Política Nacional de Justiça Restaurativa no âmbito do Poder Judiciário. CNJ, 2016.</li>
+                        <li>CARRANO BUENO, Austregésilo. <strong>Canto dos Malditos</strong>. São Paulo: Expressão Popular, 2001.</li>
+                        <li>BICHO DE SETE CABEÇAS. Direção: Laís Bodanzky. Roteiro: Luiz Bolognesi. Brasil: Buriti Filmes, 2001. 1 filme (74 min).</li>
+                        <li>SALMASO, Marcelo Nalesso. <strong>A Justiça Restaurativa e sua relação com a Mediação e Conciliação</strong>. Belo Horizonte: MPMG, 2016.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Projeto Psicovozes. Desenvolvido para fins acadêmicos e reflexivos. Todas as imagens e relatos fictícios foram inspirados em eventos históricos e leis vigentes no Brasil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
